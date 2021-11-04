@@ -8,7 +8,7 @@ interface Props {}
 
 function Header({}: Props): ReactElement {
   return (
-    <div className="flex py-4">
+    <div className="container mx-auto flex py-4">
       <div className="flex-1 flex items-center">
         <div className="mr-14">
           <Image alt="logo" height="32" width="100" src="/assets/logo.svg" />

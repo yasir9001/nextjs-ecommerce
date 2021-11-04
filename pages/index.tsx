@@ -1,13 +1,11 @@
-import { Button, DatePicker } from "antd";
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
 import Header from "./../src/components/Header/Header";
-
+import Jumbotron from "./../src/components/Jumbotron/Jumbotron";
 const Home: NextPage = () => {
   return (
     <div>
       <Header />
+      <Jumbotron />
     </div>
   );
 };

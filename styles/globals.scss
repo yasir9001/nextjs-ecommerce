@@ -1,0 +1,25 @@
+$widthLimit: 1000;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~antd/dist/antd.css";
+
+@mixin height-classes {
+  @for $i from 0 through $widthLimit {
+    $height: $i * 1px;
+    .h-px-#{$i} {
+      height: $height !important;
+    }
+  }
+}
+@mixin width-classes {
+  @for $i from 0 through $widthLimit {
+    $width: $i * 1px;
+    .w-px-#{$i} {
+      width: $width !important;
+    }
+  }
+}
+@include height-classes;
+@include width-classes;
