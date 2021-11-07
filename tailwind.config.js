@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   purge: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -12,6 +14,18 @@ module.exports = {
       lg: "992px",
       xl: "1200px",
       "2xl": "1600px",
+    },
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      black: colors.black,
+      white: colors.white,
+      gray: colors.trueGray,
+      indigo: colors.indigo,
+      red: colors.rose,
+      yellow: colors.amber,
+      primary: "#FB2E86",
+      secondary: "#151875",
     },
     extend: {},
   },
