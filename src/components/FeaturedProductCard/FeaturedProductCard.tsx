@@ -2,7 +2,8 @@ import React, { ReactElement } from "react";
 import Image from "next/image";
 import { Button } from "antd";
 import _classes from "./FeaturedProductCard.module.scss";
-
+import { HeartOutlined, CartOutlined } from "../CustomIcon";
+import { SearchPlusOutlined } from "../CustomIcon/SearchPlusOutlined";
 interface Props {}
 
 function FeaturedProductCard({}: Props): ReactElement {
@@ -10,15 +11,22 @@ function FeaturedProductCard({}: Props): ReactElement {
     <div
       className={`${_classes["featured-product-card"]} shadow-lg bg-gray-50 relative`}
     >
-      <div className={_classes["featured-product-card__action-itmes"]}></div>
+      <div
+        className={`${_classes["featured-product-card__action-itmes"]}  px-3 pt-3`}
+      >
+        <button className="h-px-32 w-px-32 flex items-center justify-center rounded-full hover:bg-blue-2">
+          <CartOutlined />
+        </button>
+        <button className="h-px-32 w-px-32 flex items-center justify-center rounded-full hover:bg-blue-2 ml-4">
+          <HeartOutlined />
+        </button>
+        <button className="h-px-32 w-px-32 flex items-center justify-center rounded-full hover:bg-blue-2 ml-4">
+          <SearchPlusOutlined />
+        </button>
+      </div>
       <div className={_classes["featured-product-card__head"]}>
         <div className={`${_classes["featured-product-card__image"]}`}>
           <Image src="/assets/chair-1.png" alt="" layout="fill" />
-        </div>
-        <div className={`${_classes["featured-product-card__view-button"]}`}>
-          <Button size="small" type="primary">
-            View Details
-          </Button>
         </div>
       </div>
       <div

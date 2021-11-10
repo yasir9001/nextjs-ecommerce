@@ -10,18 +10,23 @@
         transition: all 0.3s ease-in-out;
       }
     }
-    .featured-product-card__view-button {
-      height: auto !important;
-      opacity: 1 !important;
+    .featured-product-card__action-itmes {
+      display: flex !important;
+      button{
+        display: flex !important;
+      }
     }
   }
+  
   .featured-product-card__action-itmes {
-    // border: 1px solid red;
     position: absolute;
     top: 0;
     left: 0;
     height: 2rem;
+    width: 100%;
+    display: none;
   }
+
   .featured-product-card__head {
     height: 250px;
     display: flex;
@@ -44,13 +49,6 @@
         position: relative !important;
         height: unset !important;
       }
-    }
-    .featured-product-card__view-button {
-      text-align: center;
-      height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: all 0.3s ease-in-out;
     }
   }
 }
