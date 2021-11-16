@@ -2,8 +2,8 @@ import React, { ReactElement } from "react";
 import Image from "next/image";
 import { Button } from "antd";
 import _classes from "./FeaturedProductCard.module.scss";
-import { HeartOutlined, CartOutlined } from "../CustomIcon";
-import { SearchPlusOutlined } from "../CustomIcon/SearchPlusOutlined";
+import { HeartOutlined, CartOutlined, SearchPlusOutlined } from "../CustomIcon";
+
 interface Props {}
 
 function FeaturedProductCard({}: Props): ReactElement {

@@ -1,0 +1,24 @@
+.latest-product-card {
+  .latest-product-card__head {
+    &:hover {
+      background: #fff;
+      transition: all 0.3s ease-in-out;
+      .latest-product-card__action-items{
+        display: block;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .latest-product-card__head-image {
+      position: relative;
+      > div {
+        position: unset !important;
+      }
+      img {
+        object-fit: contain;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+      }
+    }
+  }
+}
