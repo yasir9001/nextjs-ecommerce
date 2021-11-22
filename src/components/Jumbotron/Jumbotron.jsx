@@ -6,7 +6,7 @@ import _classes from "./Jumbotron.module.scss";
 
 function Jumbotron() {
   return (
-    <div className={`${_classes["home-jumbotron"]} mb-20`}>
+    <div className={`${_classes["home-jumbotron"]}`}>
       <Container>
         <div className="flex h-px-700 mx-auto">
           <div className="flex-1 flex items-center relative">

@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Container from "../src/components/Container/container";
 import FeaturedProducts from "../src/components/FeaturedProducts/FeaturedProducts";
+import LandingInfo from "../src/components/LandingInfo/LandingInfo";
 import LatestProducts from "../src/components/LatestProducts/LatestProducts";
 import WeOffer from "../src/components/WeOffer/WeOffer";
 import Header from "./../src/components/Header/Header";
@@ -11,24 +12,27 @@ const Home: NextPage = () => {
     <div>
       <Header />
       <Jumbotron />
-      <Container>
-        <h2 className="text-3xl font-bold text-center mb-12">
-          Featured Products
-        </h2>
-        <FeaturedProducts />
-      </Container>
-      <Container>
-        <h2 className="text-3xl font-bold text-secondary text-center mb-12">
-          Latest Products
-        </h2>
-        <LatestProducts />
-      </Container>
-      <Container>
-        <h2 className="text-3xl font-bold text-secondary text-center mb-12">
-          What We Offer!
-        </h2>
-        <WeOffer />
-      </Container>
+      <div className="my-24">
+        <Container>
+          <h2 className="text-4xl text-secondary font-bold text-center mb-12">
+            Featured Products
+          </h2>
+          <FeaturedProducts />
+        </Container>
+        <Container>
+          <h2 className="text-4xl font-bold text-secondary text-center mb-12">
+            Latest Products
+          </h2>
+          <LatestProducts />
+        </Container>
+        <Container>
+          <h2 className="text-4xl font-bold text-secondary text-center mb-12">
+            What We Offer!
+          </h2>
+          <WeOffer />
+        </Container>
+      </div>
+      <LandingInfo />
     </div>
   );
 };

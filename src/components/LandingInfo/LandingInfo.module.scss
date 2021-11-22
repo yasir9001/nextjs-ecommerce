@@ -1,0 +1,40 @@
+.landing-info {
+  background: #f1f0ff;
+  ul {
+    li {
+      margin-left: 1.5rem;
+      position: relative;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 0.5rem;
+        left: -1.5rem;
+      }
+    }
+    &.info-ul-1 {
+      li {
+        &:before {
+          background: #f52b70;
+        }
+      }
+    }
+    &.info-ul-2 {
+      li {
+        &:before {
+          background: #2b2bf5;
+        }
+      }
+    }
+    &.info-ul-3 {
+      li {
+        &:before {
+          background: #2bf5cc;
+        }
+      }
+    }
+  }
+}

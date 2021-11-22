@@ -6,10 +6,10 @@ interface Props {}
 function WeOffer({}: Props): ReactElement {
   return (
     <div className={_classes["we-offer"]}>
-      <WeOfferCard />
-      <WeOfferCard />
-      <WeOfferCard />
-      <WeOfferCard />
+      <WeOfferCard image="/assets/free-delivery.svg" />
+      <WeOfferCard image="/assets/cashback.svg" />
+      <WeOfferCard image="/assets/premium-quality.svg" />
+      <WeOfferCard image="/assets/24-7-support.svg" />
     </div>
   );
 }
