@@ -1,0 +1,26 @@
+.featured-product-card {
+  .featured-product-card__head {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    .featured-product-card__image {
+      cursor: pointer;
+      position: relative;
+      height: 200px;
+      margin-bottom: 1rem;
+      width: 100%;
+      > div {
+        position: unset !important;
+      }
+      img {
+        object-fit: contain;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+      }
+    }
+  }
+}

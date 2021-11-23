@@ -1,0 +1,18 @@
+.trending-products {
+  &__row-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(261px, 1fr));
+    grid-gap: 2rem;
+  }
+  &__row-2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+    &__card-1 {
+      background-color: #fff6fb;
+    }
+    &__card-2 {
+      background-color: #eeeffb;
+    }
+  }
+}
