@@ -9,13 +9,13 @@ const LandingInfo = (props: Props) => {
   return (
     <div className={`${_classes["landing-info"]}`}>
       <Container>
-        <div className="flex h-px-500 mx-auto pt-6">
+        <div className="flex h-px-450 mx-auto ">
           <div className="flex-1 flex items-center">
             <div className="h-full w-px-450">
               <div className="h-min	w-full">
                 <Image
                   alt=""
-                  src="/assets/sofa.png"
+                  src="/assets/sofa-2.png"
                   layout="responsive"
                   height="500"
                   width="500"

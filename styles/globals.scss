@@ -19,6 +19,9 @@ $widthLimit: 1000;
     .w-px-#{$i} {
       width: $width !important;
     }
+    .max-w-px-#{$i} {
+      max-width: $width !important;
+    }
   }
 }
 

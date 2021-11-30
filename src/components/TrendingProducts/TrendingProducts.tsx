@@ -7,23 +7,25 @@ interface Props {}
 const TrendingProducts = (props: Props) => {
   return (
     <div className={_classes["trending-products"]}>
-      {/* <div className={_classes["trending-products__row-1"]}>
+      <div className={_classes["trending-products__row-1"]}>
         <TrendingProductsCard image="/assets/chair-2.png" />
         <TrendingProductsCard image="/assets/chair-3.png" />
         <TrendingProductsCard image="/assets/chair-4.png" />
         <TrendingProductsCard image="/assets/chair-5.png" />
-      </div> */}
-      <div className={`${_classes["trending-products__row-2"]} mt-8 flex`}>
+      </div>
+      <div
+        className={`${_classes["trending-products__row-2"]} mt-10 flex gap-8`}
+      >
         <div
-          className={`${_classes["trending-products__row-2__card-1"]} pt-8 px-6 pb-4 flex-1	`}
+          className={`${_classes["trending-products__row-2__card-1"]} pt-8 px-6 pb-4 flex-1`}
         >
           <div>
             <p className="text-secondary text-xl font-semibold mb-3">
               23% off on all products
             </p>
-            <a className="underline text-base font-semibold">Shop Now</a>
+            <a className="underline text-primary font-semibold">Shop Now</a>
           </div>
-          <div className="h-px-200 responsive-img-next w-9/12 ml-auto">
+          <div className="h-px-160 responsive-img-next w-9/12 ml-auto">
             <Image
               className="object-right"
               src="/assets/clock.png"
@@ -33,15 +35,17 @@ const TrendingProducts = (props: Props) => {
           </div>
         </div>
         <div
-          className={`${_classes["trending-products__row-2__card-2"]} pt-8 px-4 pb-4`}
+          className={`${_classes["trending-products__row-2__card-2"]} pt-8 px-4 pb-4 flex-1`}
         >
           <div>
             <p className="text-secondary text-xl font-semibold mb-3">
               23% off on all products
             </p>
-            <a className="underline text-base font-semibold">View Collection</a>
+            <a className="underline text-primary font-semibold">
+              View Collection
+            </a>
           </div>
-          <div className="h-px-200 responsive-img-next w-9/12 ml-auto">
+          <div className="h-px-160 responsive-img-next w-9/12 ml-auto">
             <Image
               className="object-right"
               src="/assets/drawer.png"
@@ -50,14 +54,38 @@ const TrendingProducts = (props: Props) => {
             />
           </div>
         </div>
-        <div className="">
-          <div>
-            <div className="h-px-100 w-px-70 responsive-img-next bg-gray">
-              <Image src="/assets/lamp.png" alt="" layout="fill" />
+        <div className="flex flex-col gap-6 max-w-px-300 w-full">
+          <div className="flex flex-1">
+            <div className="h-full p-2 w-px-100 bg-gray-1 ">
+              <div className=" h-full responsive-img-next">
+                <Image src="/assets/chair-1.png" alt="" layout="fill" />
+              </div>
             </div>
-            <div className="">
-              <p>Executive Seat Chair</p>
-              <p>32.00</p>
+            <div className="flex-1 flex flex-col justify-center p-4 ">
+              <p className="text-base text-secondary">Executive Seat Chair</p>
+              <p className="text-secondary line-through">$32.00</p>
+            </div>
+          </div>
+          <div className="flex flex-1">
+            <div className="h-full p-2 w-px-100 bg-gray-1 ">
+              <div className=" h-full responsive-img-next">
+                <Image src="/assets/chair-2.png" alt="" layout="fill" />
+              </div>
+            </div>
+            <div className="flex-1 flex flex-col justify-center p-4 ">
+              <p className="text-base text-secondary">Executive Seat Chair</p>
+              <p className="text-secondary line-through">$32.00</p>
+            </div>
+          </div>
+          <div className="flex flex-1">
+            <div className="h-full p-2 w-px-100 bg-gray-1 ">
+              <div className=" h-full responsive-img-next">
+                <Image src="/assets/lamp.png" alt="" layout="fill" />
+              </div>
+            </div>
+            <div className="flex-1 flex flex-col justify-center p-4 ">
+              <p className="text-base text-secondary">Executive Seat Chair</p>
+              <p className="text-secondary line-through">$32.00</p>
             </div>
           </div>
         </div>
